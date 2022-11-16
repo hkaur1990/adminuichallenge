@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&family=Space+Grotesk:wght@300&display=swap');
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .container{
+    margin:0 auto;
+    padding: 1rem;
+  }
+  
+  .search-bar{
+    border-radius: 0.25rem;
+    border:1px solid #a7a7a7;
+    height : 2.5rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    font-family: inherit;
+    font-size: 1rem;
+  }
+  
+  .search-bar::placeholder{
+    color:#c2baba;
+  }
+  
+  .search-bar:focus{
+    outline: none;
+  }
+  
+  .spinner-wrapper{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    padding: 150px 0;
+  }
+  
+  
+  @keyframes spinner {
+    to {transform: rotate(360deg);}
+  }
+   
+  .spinner {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    border-top-color: #000;
+    animation: spinner .6s linear infinite;
+  }
+
+  
